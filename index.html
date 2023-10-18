@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="mainnav">
+            <div class="logo"><a href="index.html"><b>ATHARVA</b></a></div>
+            <div class="nav">
+                <ul class="normal">
+                    <li><a href="">as</a></li>
+                    <li><a href="">SKILLS</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                </ul>
+            </div>
+            <li id="menu-icon" onclick="ShowSideBar()"><i class="fa-solid fa-bars"></i></li>
+            <ul class="sidebar">
+                <li onclick="HideSideBar()"><i class="fa fa-times"></i></li>
+                <li><a href="">as</a></li>
+                <li><a href="">SKILLS</a></li>
+                <li><a href="">PROJECTS</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="section-container">
+            <div class="content">
+                <p class="subtitle">Hello</p>
+                <h1 class="title">
+                    I am <span>ATHARVA DESHMUKH <br></span>FRONTEND DEVELOPER
+                </h1>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi odit inventore vero modi consequatur voluptates, aliquid illum necessitatibus voluptatibus ut unde nihil est, ipsum incidunt obcaecati illo sapiente totam molestiae cum doloribus! Quam veritatis voluptate unde optio officiis amet. Sunt!
+                </p>
+                <div class="action-buttons">
+                    <button class="CV-download">Download CV</button>
+                </div>
+            </div>
+            <div class="profile-pic">
+                <img src="attchments/shirt10.jpeg" alt="">
+            </div>
+        </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col1">
+                        <img src="attchments/shirt10.jpeg" alt="">
+                    </div>
+                    <div class="col2">
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente dolorem quo, reprehenderit autem, velit, corrupti sit modi numquam soluta blanditiis quod! Sunt ratione cumque eius maxime porro, inventore suscipit aperiam earum culpa? Fugiat dolores dolorum perferendis rerum optio ipsam consequuntur vero, ab enim, delectus magni, reiciendis pariatur distinctio velit repellat!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pointer"></div>
+    <div class="blur"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- document.addEventListener ("mousemove",(e)=>{
+    let x =e.pageX;
+    let y =e.pageY;
+
+    pointer.forEach(el=>{
+        el.style.left=`${x}px`;
+        el.style.top=`${y}px`;
+    });
+}); -->
