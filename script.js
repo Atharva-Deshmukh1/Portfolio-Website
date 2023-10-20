@@ -6,12 +6,12 @@ function HideSideBar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none';
 }
-const pointer = document.getElementById(`pointer`);
 
-document.body.onpointermove = event =>{
-    const {clientX,clientY} = event;
-    pointer.animate({
-        left:`${clientX}px`,
-        top:`${clientY}px`
-    },{duration:1000, fill:"forwards"});
-}
+const pointer = document.getElementById(`pointer`);
+window.addEventListener ("mousemove",(e)=>{
+    const x =e.pageX;
+    const y =e.pageY;
+    
+    pointer.style.left=`${x}px`;
+    pointer.style.top=`${y}px`;
+    });
