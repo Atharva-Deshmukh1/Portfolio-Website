@@ -13,10 +13,15 @@ window.addEventListener ("mousemove",(e)=>{
     const y =e.pageY;
 
     
-        pointer.style.left=`${x}px`;
-        pointer.style.top=`${y}px`;
-    });
+    pointer.style.left=`${x}px`;
+    pointer.style.top=`${y}px`;
+});
 
+VanillaTilt.init(document.querySelector(".card"), {
+	max:30  ,
+	speed: 50,
+    glare:true
+});
 var tl = gsap.timeline({scrollTrigger:{
     trigger:"main",
     markers:false,
