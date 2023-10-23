@@ -40,12 +40,33 @@ tl
 gsap.from(".title",{
     y:-100,
     duration:1,
-    delay:1,
+    delay:2,
     opacity:0,
 })
 gsap.from(".nav",{
+    duration:2,
+    delay:1,
+    opacity:0,
+})
+gsap.from(".profile-pic",{
+    duration:5,
+    delay:1,
+    opacity:0,
+})
+gsap.from(".subtitle",{
     y:-100,
     duration:1,
     delay:1,
+    opacity:0,
+})
+gsap.from(".description",{
+    x:-100,
+    duration:1,
+    delay:3,
+    opacity:0,
+})
+gsap.from(".CV-download",{
+    duration:3,
+    delay:4,
     opacity:0,
 })
