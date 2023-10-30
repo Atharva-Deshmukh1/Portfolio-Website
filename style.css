@@ -9,24 +9,25 @@ body,html{
     height: 100%;
     background: #0d1317;
 }
+.main{
+    width: 100%;
+}
 h5{
     font-size: 40px;
     color: #ffc20e;
     text-align: center;
     letter-spacing: 0.8;
-    margin-top: 90px;
-    margin-bottom: -30px;
+    margin-top: 80px ;
+    margin-bottom: 40px ;
 }
 h6{
-    position: relative;
-    top: 99px;
-    left: 0;
+
     z-index: 999;
     font-size: 40px;
     color: #ffc20e;
     text-align: center;
     letter-spacing: 0.8;
-    margin: 30px 0;
+    margin-top: 80px ;
 }
 .mainnav{
     width: 100%;
@@ -105,7 +106,7 @@ h6{
 
 .section{width: 100%;
     /* background: #082032; */
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -113,7 +114,7 @@ h6{
     gap: 50px;
 }
 .section-container{
-    min-height: 90vh;
+    height: 100%;
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
@@ -122,6 +123,7 @@ h6{
     gap: 4rem;
 }
 .content{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,7 +198,7 @@ h6{
 } */
 #ABOUT{
     margin-left: 5%;
-    height: 80vh;
+    height: 75vh;
     width: 90%;
     background: #042c2d;
     display: flex;
@@ -234,6 +236,9 @@ h6{
     color: #ffc20e;
     margin-bottom: 10px;
 }
+.col2 p{
+    font-size: 17px;
+}
 .col2 h2{
     color: #ffc20e;
     margin-top: 10px;
@@ -249,7 +254,7 @@ h6{
     justify-content: space-between;
 }
 .btech h4{
-    font-size: 1vw;
+    font-size: 15px;
 }
 #pointer{
     z-index: 1;
@@ -274,7 +279,7 @@ h6{
     /* background-image: url(attchments/shirt10.jpeg); */
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     justify-content: center;
     background: #0d1317;
@@ -426,12 +431,56 @@ h6{
     position: relative;
     text-align: center;
 }
+.inner-skills2{
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    background: #0d1317;
+}
+.box2{
+    position: relative;
+    padding: 40px 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circle2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 125px;
+    /* background: #8a3a3a; */
+    background: conic-gradient(from 0deg, var(--clr)0%,var(--clr)0% var(--i),#333 var(--i),#333 100%);
+    border-radius: 50%;
+}
+.circle2::before{
+    content: "";
+    position: absolute;
+    inset: 10px;
+    background: #0d1317;
+    border-radius: 50%;
+}
+.box2 h3{
+    position: relative;
+    text-align: center;
+}
 .services{
     height: 90vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .services div{
     border-radius: 10px;
@@ -442,7 +491,7 @@ h6{
     width: 350px;
 }
 .services i{
-    padding: 40px 0;
+    padding: 60px 0;
     font-size: 70px;
     height: 50%;
     width: 50%;
@@ -459,9 +508,10 @@ h6{
 .services h2{
     margin-top: 20px;
     color: #ffc20e;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 .services p{
+    font-size: 1rem;
     padding: 10px;
     margin-top: 10px;
     color:  #fbe4d8;
@@ -471,8 +521,10 @@ h6{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 90vh;
+    flex-wrap: wrap;
+    height: auto;
     width: 100%;
+    padding: 50px 50px;
 }
 .projects{
     color: #fbe4d8;
@@ -502,4 +554,172 @@ h6{
 }
 .project-img img:hover{
     transform: scale(.9);
+}
+@media (min-width:1000px){
+    .inner-skills2{
+        display: none;
+    }
+}
+@media (min-width:750px) and (max-width:1000px){
+    .nav{
+        width: 65%;
+    }
+}
+@media (min-width:750px) and (max-width:1137px){
+    .section{
+        padding: 7vw 0;
+        height: auto;
+    }
+    .subtitle{
+        margin-top: 70px;
+    }
+    .title{
+        font-size: 3.4vw;
+        line-height: 3.7vw;
+    }
+    .description{
+        line-height: 1.8vw;
+        font-size: 1.4vw;
+    }
+    .nav{
+        height: 26px;
+    }
+    .nav li{
+        padding: 0 15px;
+    }
+}
+@media (min-width:1000px) and (max-width:1210px){
+    .glass{
+        width: 95%;
+    }
+    .card{
+        height: 15vw;
+        width: 20vw;
+    }
+
+}
+@media (min-width:500px) and (max-width:1000px){
+    .glass{
+        width: 95%;
+    }
+    .card{
+        height: 150px;
+        width: 200px;
+    }
+    .circle{
+        height: 100px;
+        width: 100px;
+    }
+    
+
+}
+@media(max-width:1000px){
+    .skills{
+        display: none;
+    }
+
+}
+@media (min-width:800px) and (max-width:1100px){
+    .services{
+        row-gap: 20px;
+        height: auto;
+        width: 100%;
+    }
+    .services div{
+        height: auto;
+        min-width: 20vw;
+    }
+    .services p{
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    .container3{
+        gap: 20px;
+    }
+}
+@media (min-width:500px) and (max-width:799px){
+    .services{
+        row-gap: 20px;
+        height: auto;
+        width: 100%;
+    }
+    .services div{
+        height: 270px;
+        width: 240px;
+    }
+    .services p{
+        margin-top: 2px;
+        font-size: 12px;
+    }
+    .services i{
+        padding: 25px 0;
+    }
+    .services h2{
+        margin-top: 0;
+    }
+    .container3{
+        gap: 20px;
+        row-gap: 40px;
+    }
+    .projects{
+        height: 300px;
+        width: 200px;
+    }
+}
+@media (min-width:250px) and (max-width:500px){
+    .nav{
+        display: none;
+    }
+    .profile-pic{
+        margin-top: -80px;
+    }
+    .glass{
+        width:100%;
+    }
+    .card{
+        height: 38vw;
+        width: 40vw;
+    }
+    .circle{
+        height: 20vw;
+        width: 20vw;
+    }
+    .circle h3{
+        font-size: 15px;
+    }
+    .box2{
+        padding: 20px 0;
+        width: 140px;
+    }
+    .circle2{
+        height: 100px;
+        width: 100px;
+    }
+    .services{
+        row-gap: 20px;
+        height: auto;
+        width: 100%;
+    }
+    .services div{
+        height: 270px;
+        width: 240px;
+    }
+    .services p{
+        margin-top: 2px;
+        font-size: 12px;
+    }
+    .services i{
+        padding: 25px 0;
+    }
+    .services h2{
+        margin-top: 0;
+    }
+    .container3{
+        gap: 20px;
+        row-gap: 40px;
+    }
+    .projects{
+        height: 300px;
+        width: 200px;
+    }
 }
