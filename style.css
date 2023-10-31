@@ -198,7 +198,7 @@ h6{
 } */
 #ABOUT{
     margin-left: 5%;
-    height: 75vh;
+    height: 85vh;
     width: 90%;
     background: #042c2d;
     display: flex;
@@ -486,7 +486,7 @@ h6{
     border-radius: 10px;
     z-index: 999;
     text-align: center;
-    background: #384358;
+    background: #5a3c3c;
     height: 350px;
     width: 350px;
 }
@@ -701,25 +701,51 @@ h6{
         width: 100%;
     }
     .services div{
-        height: 270px;
-        width: 240px;
+        height: 50vw;
+        width: 45vw;
     }
     .services p{
         margin-top: 2px;
-        font-size: 12px;
+        font-size: 8px;
+    }
+    .services img{
+        height: 25vw;
+        width: 25vw;
     }
     .services i{
-        padding: 25px 0;
+        font-size: 2.3rem;
+        padding: 8vw 0;
     }
     .services h2{
         margin-top: 0;
+        font-size: 1rem;
     }
     .container3{
         gap: 20px;
         row-gap: 40px;
     }
     .projects{
-        height: 300px;
-        width: 200px;
+        height: 60vw;
+        width: 30vw;
     }
+    .projects h3{
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    .project-img{
+        height: 85%;
+    }
+}
+@media (min-width:270px) and (max-width:1000px){
+    .col1{
+        display: none;
+    }
+    .col2{
+        text-align: center;
+        flex-basis: 90%;
+    }
+    .edu{
+        text-align: left;
+    }
+
 }
