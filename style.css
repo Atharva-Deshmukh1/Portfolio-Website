@@ -22,7 +22,7 @@ h5{
 }
 h6{
 
-    z-index: 999;
+    z-index: 99;
     font-size: 40px;
     color: #ffc20e;
     text-align: center;
@@ -40,7 +40,7 @@ h6{
     color: rgb(0, 0, 0);
 }
 .logo{
-    z-index: 999;
+    z-index: 99;
     position: absolute;
     top: 20px;
     left: 5px;
@@ -50,7 +50,7 @@ h6{
     color: #ffba08;
 }
 .nav{
-    z-index: 999;
+    z-index: 99;
     height: 45px;
     margin: 10px 0;
     border-radius: 15px;
@@ -79,6 +79,7 @@ h6{
     list-style: none;
 }
 .sidebar li{
+    z-index: 999;
     height: 10%;
     width: 100%;
     padding: 0 50%;
@@ -89,7 +90,7 @@ h6{
     list-style: none;
 }
 .sidebar{
-    z-index: 2;
+    z-index: 999;
     position: fixed;
     top: 0;
     right: 0;
@@ -130,36 +131,41 @@ h6{
 }
 .subtitle{
     letter-spacing: 2px;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     margin-bottom: 1rem;
 }
 .title{
-    z-index: 999;
+    z-index: 99;
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 3rem;
     color: #ac3c3c;
     margin-bottom: 1rem;
 }
-.title span{z-index: 999;
-    background: linear-gradient(293deg,#e0eded,#c1f308,#e1e9ea);
+.title span{z-index: 99;
+    background:#ffc20e;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     font-weight: 600;
 }
-.description{z-index: 999;
+.description{z-index: 99;
     line-height: 1.5rem;
-    color: aquamarine;
+    color: rgb(245, 247, 247);
     margin-bottom: 2rem;
 }
-.CV-download{
+.CV-download{z-index: 999;
     height: 40px;
+    cursor: pointer;
     width: 100px;
     font-weight: 600;
     border-radius: 10px;
+}
+.CV-download button{
+    z-index: 999;
+    
 }
 .profile-pic{
     display: grid;
@@ -311,7 +317,7 @@ h6{
     text-align: center;
     aspect-ratio: 1;
     border-radius: 50%;
-    z-index: 999;
+    z-index: 99;
 }
 .circle h3{
     letter-spacing: .7px;
@@ -325,7 +331,7 @@ h6{
     border-radius: 50%;  
 }
 .skills{
-    z-index: 999;
+    z-index: 99;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -345,7 +351,7 @@ h6{
 .glass{
     padding: 20px;
     width: 80%;
-    z-index: 999;
+    z-index: 99;
     position: relative;
     height: auto;
     /* background: #0d1317; */
@@ -484,7 +490,7 @@ h6{
 }
 .services div{
     border-radius: 10px;
-    z-index: 999;
+    z-index: 99;
     text-align: center;
     background: #5a3c3c;
     height: 350px;
@@ -528,7 +534,7 @@ h6{
 }
 .projects{
     color: #fbe4d8;
-    z-index: 999;
+    z-index: 99;
     text-align: center;
     height: 400px;
     width: 220px;
@@ -747,5 +753,34 @@ h6{
     .edu{
         text-align: left;
     }
-
+    #ABOUT{
+        height: auto;
+    }
+}
+.contact{
+    color: wheat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background: #4e5801;
+}
+.info{
+    z-index: 999;
+}
+.no{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.mail{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.soc-icon {
+    z-index: 999;
+}
+.soc-icon a{
+    padding: 1vw;
 }
