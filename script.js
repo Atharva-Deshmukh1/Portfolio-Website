@@ -17,11 +17,6 @@ window.addEventListener ("mousemove",(e)=>{
     pointer.style.top=`${y}px`;
 });
 
-VanillaTilt.init(document.querySelector(".card"), {
-	max:30  ,
-	speed: 50,
-    glare:true
-});
 var tl = gsap.timeline({scrollTrigger:{
     trigger:"main",
     markers:false,
@@ -65,7 +60,7 @@ gsap.from(".description",{
     delay:3,
     opacity:0,
 })
-gsap.from(".CV-download",{
+gsap.from(".action-buttons",{
     duration:3,
     delay:4,
     opacity:0,
