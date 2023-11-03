@@ -86,12 +86,13 @@ h6{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: #000;
+    color: #ffffff;
     list-style: none;
 }
 .sidebar{
     z-index: 999;
     position: fixed;
+    color: white;
     top: 0;
     right: 0;
     height: 100vh;
@@ -143,6 +144,17 @@ h6{
     color: #ac3c3c;
     margin-bottom: 1rem;
 }
+.title p{
+    font-family:'Times New Roman', Times, serif;
+    z-index: 99;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3rem;
+    color: #ffc20e;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    margin-bottom: 1rem;
+}
 .title span{z-index: 99;
     background:#ffc20e;
     background-clip: border-box;
@@ -156,16 +168,29 @@ h6{
     color: rgb(245, 247, 247);
     margin-bottom: 2rem;
 }
-.CV-download{z-index: 999;
-    height: 40px;
-    cursor: pointer;
-    width: 100px;
-    font-weight: 600;
-    border-radius: 10px;
-}
-.CV-download button{
+.action-buttons{
     z-index: 999;
-    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.action-buttons a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 35px;
+    width: 120px;
+    justify-content: center;
+    background: #000000;
+    border: 2px solid #ffc20e ;
+    color: #ffc20e;
+    font-weight: 800;
+    border-radius: 8px;
+}
+.action-buttons a:hover{
+    background: #ffc20e;
+    border: 2px solid #000000 ;
+    color: #000000;
 }
 .profile-pic{
     display: grid;
@@ -194,7 +219,9 @@ h6{
         margin-top: -130px;
         grid-area: 1/1/2/2;
     }
-
+    .action-buttons{
+        justify-content: center;
+    }
 }
 /* .about{
     width: 80%;
@@ -492,7 +519,7 @@ h6{
     border-radius: 10px;
     z-index: 99;
     text-align: center;
-    background: #5a3c3c;
+    background: #b48909;
     height: 350px;
     width: 350px;
 }
@@ -513,14 +540,14 @@ h6{
 }
 .services h2{
     margin-top: 20px;
-    color: #ffc20e;
+    color: #000000;
     font-size: 1.5rem;
 }
 .services p{
     font-size: 1rem;
     padding: 10px;
     margin-top: 10px;
-    color:  #fbe4d8;
+    color:  #000000;
 }
 .container3{
     
@@ -681,6 +708,13 @@ h6{
     }
     .glass{
         width:100%;
+        z-index: 2;
+    }
+    .sidebar{
+        z-index: 999;
+    }
+    .sidebar li{
+        z-index: 999;
     }
     .card{
         height: 38vw;
@@ -741,6 +775,7 @@ h6{
     .project-img{
         height: 85%;
     }
+    
 }
 @media (min-width:270px) and (max-width:1000px){
     .col1{
@@ -758,15 +793,21 @@ h6{
     }
 }
 .contact{
-    color: wheat;
+    z-index: 999;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
-    background: #4e5801;
+    height: auto;
+    width: 100%;
+    background: #ffc20e;
 }
 .info{
+    padding: 20px;
     z-index: 999;
+    column-gap: 10px;
 }
 .no{
     display: flex;
@@ -779,8 +820,51 @@ h6{
     align-items: center;
 }
 .soc-icon {
+    
     z-index: 999;
 }
 .soc-icon a{
+    font-size: 26px;
+    color: black;
     padding: 1vw;
+}
+/* .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+} */
+.btn{
+    margin: 5px;
+    z-index: 999;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.btn a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 36px;
+    width: 100%;
+    justify-content: center;
+    background: #000000;
+    color: #ededed;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.btn a:hover{
+    background: #242424;
+    color: #ffc20e;
+}
+.copywrite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    background: white;
+    
 }
