@@ -781,6 +781,18 @@ h6{
     .project-img{
         height: 85%;
     }
+    .info{
+        font-size: 15px;
+    }
+    .btn{
+        width: 80%;
+        height: 50px;
+    }
+    .btn a{
+        width: 20px;
+    }
+    
+    
     
 }
 @media (min-width:270px) and (max-width:1000px){
@@ -790,8 +802,10 @@ h6{
     .col2{
         text-align: center;
         flex-basis: 90%;
+        margin-left: 5%;
     }
     .edu{
+        margin-left: 5%;
         text-align: left;
     }
     #ABOUT{
