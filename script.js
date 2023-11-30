@@ -6,7 +6,58 @@ function HideSideBar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none';
 }
+const letters = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+document.querySelector("h5").onmouseover = event =>{
+    let iteration = 0;
+    const interval =  setInterval(()=>{
+    event.target.innerText = event.target.innerText.split("")
+    .map((letter,index)=>{
+        if(index<iteration){
+            return event.target.dataset.value[index];
+    }
+    return letters[Math.floor(Math.random() * 26 )]
+    })
+    .join("");
 
+    if(iteration>= event.target.dataset.value.length) 
+    clearInterval(interval);
+    iteration +=1/3;
+    },30)
+}
+document.querySelector(".pro").onmouseover = event =>{
+    let iteration = 0;
+    const interval =  setInterval(()=>{
+    event.target.innerText = event.target.innerText.split("")
+    .map((letter,index)=>{
+        if(index<iteration){
+            return event.target.dataset.value[index];
+    }
+    return letters[Math.floor(Math.random() * 26 )]
+    })
+    .join("");
+
+    if(iteration>= event.target.dataset.value.length) 
+    clearInterval(interval);
+    iteration +=1/3;
+    },30)
+}
+document.querySelector(".ski").onmouseover = event =>{
+    let iteration = 0;
+    const interval =  setInterval(()=>{
+    event.target.innerText = event.target.innerText.split("")
+    .map((letter,index)=>{
+        if(index<iteration){
+            return event.target.dataset.value[index];
+    }
+    return letters[Math.floor(Math.random() * 26 )]
+    })
+    .join("");
+
+    if(iteration>= event.target.dataset.value.length) 
+    clearInterval(interval);
+    iteration +=1/3;
+    },30)
+}
 const pointer = document.getElementById(`pointer`);
 window.addEventListener ("mousemove",(e)=>{
     const x =e.pageX;
