@@ -261,12 +261,15 @@ h6{
     flex-wrap: wrap;
 }
 .col1{
+    height: 100%;
+    width: 100%;
     margin-left: 30px;
     flex-basis: 35%;
 }
 .col1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 50%;
+    border: 6px solid #ffc20e;
 }
 .col2{
     padding: 20px 20px;
