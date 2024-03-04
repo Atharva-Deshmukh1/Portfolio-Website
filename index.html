@@ -13,10 +13,41 @@
 
 <body>
     <div class="main">
-        <div class="mainnav">
-            <div class="logo"><a href="index.html"><b>ATHARVA</b></a></div>
-            <div class="nav">
-                <ul class="normal">
+        
+        <!-- <div class="section" id="HOME">
+            
+            <div class="section-container">
+                <div class="content">
+                    <p class="subtitle">Hello...</p>
+                    <h1 class="title">
+                        I am <span>ATHARVA DESHMUKH <br></span><p >FRONTEND DEVELOPER</p>
+                    </h1>
+                    <p class="description"> I'm passionate about translating creative ideas into captivating web experiences. With a solid foundation in HTML, CSS, and JavaScript, I bring designs to life with pixel-perfect precision and cross-browser compatibility. I thrive on optimizing performance and user interactions, and my proficiency with frontend frameworks like React ensures that I'm always up-to-date with the latest tools and best practices.
+                    </p>
+                    <div class="action-buttons">
+                        <a href="attchments/Atharva_Deshmukh_Resume.pdf" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="profile-pic">
+                    <img src="attchments/dp.jpeg" alt="">
+                </div>
+            </div>
+        </div> -->
+        <div class="section" id="HOME">
+            <div class="mainnav">
+                <div class="logo"><a href="index.html"><b>ATHARVA</b></a></div>
+                <div class="nav">
+                    <ul class="normal">
+                        <li><a href="#HOME">HOME</a></li>
+                        <li><a href="#ABOUT">ABOUT</a></li>
+                        <li><a href="#SKILLS">SKILLS</a></li>
+                        <li><a href="#SERVICES">SERVICES</a></li>
+                        <li><a href="#PROJECTS">PROJECTS</a></li>
+                    </ul>
+                </div>
+                <li id="menu-icon" onclick="ShowSideBar()"><i class="fa-solid fa-bars"></i></li>
+                <ul class="sidebar">
+                    <li onclick="HideSideBar()"><i class="fa fa-times"></i></li>
                     <li><a href="#HOME">HOME</a></li>
                     <li><a href="#ABOUT">ABOUT</a></li>
                     <li><a href="#SKILLS">SKILLS</a></li>
@@ -24,17 +55,12 @@
                     <li><a href="#PROJECTS">PROJECTS</a></li>
                 </ul>
             </div>
-            <li id="menu-icon" onclick="ShowSideBar()"><i class="fa-solid fa-bars"></i></li>
-            <ul class="sidebar">
-                <li onclick="HideSideBar()"><i class="fa fa-times"></i></li>
-                <li><a href="#HOME">HOME</a></li>
-                <li><a href="#ABOUT">ABOUT</a></li>
-                <li><a href="#SKILLS">SKILLS</a></li>
-                <li><a href="#SERVICES">SERVICES</a></li>
-                <li><a href="#PROJECTS">PROJECTS</a></li>
-            </ul>
-        </div>
-        <div class="section" id="HOME">
+            <video autoplay loop muted class="background-video">
+                <source src="attchments/pexels_videos_2324166 (2160p).mp4" type="video/mp4">
+                <!-- You can add additional source elements for different video formats -->
+                Your browser does not support the video tag.
+            </video>
+        
             <div class="section-container">
                 <div class="content">
                     <p class="subtitle">Hello...</p>
@@ -52,6 +78,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="about">
             <div id="ABOUT">
                 <div class="container">
@@ -101,16 +128,11 @@
             <div class="glass">
                 <div class="card">
                     <div class="circle">
-                        <img src="attchments/HTML.webp" alt="">
-                        <h3>HTML5</h3>
+                        <img src="https://img-c.udemycdn.com/course/240x135/3339492_8fe4.jpg" style="object-fit: cover;" alt="">
+                        <h3>HTML/CSS</h3>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="circle">
-                        <img src="attchments/CSS.webp" alt="">
-                        <h3>CSS3</h3>
-                    </div>
-                </div>
+                
                 <div class="card">
                     <div class="circle">
                         <img src="attchments/JS.png" alt="">
@@ -125,16 +147,30 @@
                 </div>
                 <div class="card">
                     <div class="circle">
-                        <img src="attchments/Python_logo_01.svg.png" alt="">
-                        <h3>PYTHON</h3>
+                        <img src="attchments/Tailwind.png" alt="">
+                        <h3>TAILWIND</h3>
                     </div>
                 </div>
                 <div class="card">
                     <div class="circle">
-                        <img src="attchments/C.png" alt="">
-                        <h3>C++</h3>
+                        <img src="attchments/sql.png" alt="">
+                        <h3>SQL</h3>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="circle">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC_OSO3oRqQTsB6KcYo9Kj6-758eJqeYJBO3yoDoXSXQ&s" alt="">
+                        <h3>Mongo DB</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <img src="attchments/Python_logo_01.svg.png" alt="">
+                        <h3>PYTHON</h3>
+                    </div>
+                </div>
+                
+                
                 <div class="skills">
                     <div class="skills-section">
                         <div class="headings">
@@ -207,7 +243,7 @@
             </div>
             <div class="div">
                 <img src="attchments/responsive-design.png" alt="">
-                <h2>Rsponsive Website</h2>
+                <h2>Responsive Website</h2>
                 <p> Crafting responsive websites that seamlessly adapt to all screen sizes, I ensure that your online presence looks and functions flawlessly, no matter how your audience chooses to connect.</p>
             </div>
             <div class="div">
@@ -218,7 +254,7 @@
         </div>
         <h5 id="PROJECTS" class="pro" data-value="PROJECTS">PROJECTS</h5>
         <div class="container3" >
-            <div class="projects">
+            <!-- <div class="projects">
                 <div class="project-img">
                     <a href="https://atharva-deshmukh1.github.io/Mensware-Website/"><img src="attchments/website.jpg" alt=""></a>
                 </div>
@@ -235,8 +271,36 @@
                     <a href="https://atharva-deshmukh1.github.io/Image-Search/"><img src="attchments/image.jpg" alt=""></a>
                 </div>
                 <h3>Image Search Engine</h3>
+            </div> -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <a href="https://atharva-deshmukh1.github.io/Home-Decor-Website/" id="HomeDecor" class="item">
+                        
+                        <div class="text"> HomeDecor</div>
+                    </a>
+                    <a href="https://atharva-deshmukh1.github.io/Travel-Website/" id="Travel" class="item">
+                        <div class="text"> Travel</div>
+                    </a>
+                    <a href="https://atharva-deshmukh1.github.io/Currency-Converter/" id="Currency" class="item">
+                        <div class="text">Currency Converter </div>
+                    </a>
+                    <a href="https://atharva-deshmukh1.github.io/Mensware-Website/" id="Menswear" class="item">
+                        <div class="text"> Menswear</div>
+                    </a>
+                    <a href="https://atharva-deshmukh1.github.io/Image-Search/" id="Search" class="item">
+                        <div class="text">Image Search Engine</div>
+                    </a>
+                    <a href="https://atharva-deshmukh1.github.io/Image-Search/" id="Search" class="item">
+                        <div class="text">Image Search Engine</div>
+                    </a>
+                    </div>
+                    
+                </div>
             </div>
         </div>
+
+  
+  
         <div class="contact">
             <h2>Contact:</h2>
             <div class="info">
@@ -261,11 +325,11 @@
         <div class="copywrite">
             <h3>Copyright &copy;Atharva </h3>
         </div>
-        <div id="pointer"></div>
-
+        <!-- <div id="pointer"></div> -->
+   
     </div>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
