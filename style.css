@@ -1004,7 +1004,9 @@ h6{
 #Currency {
     background-image: url(attchments/currency.jpg);
 }
-
+#twitter{
+    background-image: url(attchments/twitter.jpg);
+}
 #HomeDecor:hover {
     background-image: url(attchments/elegance.jpg);
 }
@@ -1023,4 +1025,7 @@ h6{
 
 #Currency:hover {
     background-image: url(attchments/bigcurrency.jpg);
+}
+#twitter:hover{
+    background-image: url(attchments/bigtwitter.jpg);
 }
